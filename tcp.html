@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en">
+  <!-- contains metadata -->
   <head>
     <meta charset="utf-8" />
-    <title>Avni's Favorite Books</title>
+    <title>The Cruel Prince | Romantasy Reccs</title>
+    <!-- title that shows up in browser -->
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <!-- css file for styling -->
   </head>
+
   <body>
     <header role="banner">
-      <h1>Amazing Books and Where to Find Them</h1>
+      <h1>Romantasy Reccs</h1>
       <h2>A Guide to Fantasy-Romance</h2>
       <p>
         My personal recommendations for
@@ -15,16 +19,20 @@
         reading!
       </p>
       <nav role="navigation">
-        <p>Other books:</p>
         <ul>
+          <!-- unordered list because you can navigate in any order you want -->
+          <!-- aria-current is used to indicate that this is the item that we are currently on -->
           <li><a href="kotlc.html">Keeper of the Lost Cities</a></li>
-          <li hidden><a href="tcp.html">The Cruel Prince</a></li>
+          <li><a href="tcp.html" aria-current="page">The Cruel Prince</a></li>
           <li><a href="sm.html">Shatter Me</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- main content -->
     <main role="main">
       <section class="genre">
+        <!-- introducing the book (introductory content) -->
         <header>
           <h3>The Cruel Prince by Holly Black</h3>
           <p>
@@ -35,72 +43,83 @@
             when nearly everyone in the royal court is killed, leaving Cardan
             the sole heir.
           </p>
-          <p>
-            This is a 3-book, completed series (The Folk of the Air):
-          </p>
-          <ol>
-            <li>The Cruel Prince</li>
-            <li>The Wicked King</li>
-            <li>The Queen of Nothing</li>
-          </ol>
         </header>
-        <section>
-          <h4>Book Trailer</h4>
-          <iframe
-            width="580"
-            height="350"
-            src="https://www.youtube.com/embed/Dzah1V7LiL8"
-            title="The Cruel Prince Book Trailer"
-            frameborder="0"
-            allow="autoplay; picture-in-picture; fullscreen"
-          >
-          </iframe>
+        <p><b>Fae / Enemies-to-Lovers</b></p>
+        <p>This is a 3-book, completed series (The Folk of the Air):</p>
+        <!-- ordered list because you must read in order -->
+        <ol>
+          <li>The Cruel Prince</li>
+          <li>The Wicked King</li>
+          <li>The Queen of Nothing</li>
+        </ol>
+      </section>
+
+      <section class="trailer">
+        <h3>Book Trailer</h3>
+        <iframe
+          width="580"
+          height="350"
+          src="https://www.youtube.com/embed/Dzah1V7LiL8"
+          title="The Cruel Prince Book Trailer"
+          frameborder="0"
+          allow="autoplay; picture-in-picture; fullscreen"
+        >
+        </iframe>
+      </section>
+
+      <section>
+        <h3>Main Characters in <i>The Cruel Prince</i></h3>
+        <p>
+          There are really only two main leads in this novel/series. The book is
+          told primarily in <a href="tcp.html#jude">Jude's</a> perspective.
+        </p>
+        <section class="genre" id="jude">
+          <h4>Jude Duarte</h4>
+          <img
+            src="images/tcp/jude.jpg"
+            alt="Jude Duarte"
+            width="200"
+            height="250"
+            class="flow-right"
+          />
+          <p>
+            (Later) High Queen of Elfhame
+            <em>(the first human queen of the fey)</em>
+          </p>
+          <p>
+            Jude was raised by Madoc, the Grand General of Elfhame. As such, she
+            is a very skilled fighter. She is determined to prove herself in the
+            fey world, where she is often bullied and mistreated because of her
+            human nature.
+          </p>
+        </section>
+        <section class="genre" id="cardan">
+          <h4>Cardan Greenbriar</h4>
+          <img
+            src="images/tcp/cardan.webp"
+            alt="Cardan Greenbriar"
+            width="200"
+            height="250"
+            class="flow-left"
+          />
+          <p>Prince of Elfhame / (Later) High King of Elfhame</p>
+          <p>
+            Cardan is the male lead character of the series. He is the
+            ringleader of his group of friends, who torment Jude and her sister;
+            however, he is always there to protect her and keep them from going
+            too far. He is
+            <strong>fascinated</strong> by Jude, from her human features to the
+            way she behaves, so much so that is <em>disgusts</em> him.
+          </p>
         </section>
       </section>
-      <section class="genre" id="jude">
-        <h3>Jude Duarte</h3>
-        <img
-          src="images/tcp/jude.jpg"
-          alt="Jude Duarte"
-          width="200"
-          height="250"
-          class="flow-right"
-        />
-        <p>
-          (Later) High Queen of Elfhame
-          <em>(the first human queen of the fey)</em>
-        </p>
-        <p>
-          Jude was raised by Madoc, the Grand General of Elfhame. As such, she
-          is a very skilled fighter. She is determined to prove herself in the
-          fey world, where she is often bullied and mistreated because of her
-          human nature.
-        </p>
-      </section>
-      <section class="genre" id="cardan">
-        <h3>Cardan Greenbriar</h3>
-        <img
-          src="images/tcp/cardan.webp"
-          alt="Cardan Greenbriar"
-          width="200"
-          height="250"
-          class="flow-left"
-        />
-        <p>Prince of Elfhame / (Later) High King of Elfhame</p>
-        <p>
-          Cardan is the male lead character of the series. He is the ringleader
-          of his group of friends, who torment Jude and her sister; however, he
-          is always there to protect her and keep them from going too far. He is
-          <strong>fascinated</strong> by Jude, from her human features to the
-          way she behaves, so much so that is <em>disgusts</em> him.
-        </p>
-      </section>
-      <section class="genre" id="jude">
+
+      <section class="genre" id="quotes">
         <h3>Quotes</h3>
         <p>
           Powerful lines in the novel that will encourage you to start reading!
           If you've already read the series, take the time to test your
-          knowledge! Who spoke the below lines?
+          knowledge. Who spoke the below lines?
         </p>
         <details>
           <summary>

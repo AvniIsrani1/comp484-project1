@@ -1,13 +1,18 @@
 <!doctype html>
 <html lang="en">
+  <!-- contains metadata -->
   <head>
     <meta charset="utf-8" />
-    <title>Avni's Favorite Books</title>
+    <!-- title that shows up in browser -->
+    <title>Keeper of the Lost Cities | Romantasy Reccs</title>
+    <!-- css file for styling -->
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <!-- css file for styling -->
   </head>
+
   <body>
     <header role="banner">
-      <h1>Amazing Books and Where to Find Them</h1>
+      <h1>Romantasy Reccs</h1>
       <h2>A Guide to Fantasy-Romance</h2>
       <p>
         My personal recommendations for
@@ -15,14 +20,21 @@
         reading!
       </p>
       <nav role="navigation">
-        <p>Other books:</p>
         <ul>
-          <li hidden><a href="kotlc.html">Keeper of the Lost Cities</a></li>
+          <!-- unordered list because you can navigate in any order you want -->
+          <!-- aria-current is used to indicate that this is the item that we are currently on -->
+          <li>
+            <a href="kotlc.html" aria-current="page"
+              >Keeper of the Lost Cities</a
+            >
+          </li>
           <li><a href="tcp.html">The Cruel Prince</a></li>
           <li><a href="sm.html">Shatter Me</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- main content -->
     <main role="main">
       <section class="genre">
         <header>
@@ -36,90 +48,134 @@
             Fitz Vacker, among others, honing her abilities and strengthening
             her gifts.
           </p>
-          <p>This is an <b>ongoing</b> series. So far, 9 books have been released, along with two 0.5 books and two graphic novels: </p>
-          <ol>
-            <li>Keeper of the Lost Cities</li>
-            <li>Exile</li>
-            <li>Everblaze</li>
-            <li>Neverseen</li>
-            <li>Lodestar</li>
-            <li>Nightfall</li>
-            <li>Flashback</li>
-            <li>Legacy</li>
-            <li>Stellarlune</li>
-          </ol>
-          <map name="kotlc-characters">
-            <area
-              shape="poly"
-              coords="166,206,75,198,33,113,80,41,163,7,234,19,169,38,130,88,130,159"
-              href="kotlc.html#sophie"
-              alt="Sophie Foster"
-            />
-            <area
-              shape="poly"
-              coords="130,121,180,44,264,44,309,97,320,185,272,259,267,187,230,127,167,114"
-              href="kotlc.html#keefe"
-              alt="Keefe Sencen"
-            />
-            <area
-              shape="poly"
-              coords="220,130,267,209,228,284,152,301,72,262,29,191,26,143,60,196,128,225,195,190"
-              href="kotlc.html#fitz"
-              alt="Fitz Vacker"
-            />
-          </map>
-          <img
-            usemap="#kotlc-characters"
-            src="images/kotlc/circle.png"
-            alt="KOTLC Main Characters"
-            width="350"
-            height="308"
-          />
         </header>
-        <section>
-          <h4>Book Trailer</h4>
-          <iframe
-            width="580"
-            height="350"
-            src="https://www.youtube.com/embed/IvuFCtxs7lE"
-            title="Keeper of the Lost Cities Book Trailer"
-            frameborder="0"
-            allow="autoplay; picture-in-picture; fullscreen"
-          >
-          </iframe>
-        </section>
+        <div class="info">
+          <div class="book-list">
+            <p>
+              <!-- NEW ELEMENT: s -->
+              <!-- The s tag gives the appearance of a text (inline) strikethrough. It is used to show text that is now irrelevant or inaccurate. 
+             Here, we use the s tag to cross out the 'one.' This helps to indicate that there has been a new release in the series, and that there 
+             is now one more book to be included. 
+          -->
+              This is an <b>ongoing</b> series. So far, 9 books have been
+              released, along with two 0.5 books and <s>one</s> two graphic
+              novels:
+            </p>
+            <!-- ordered list because you must read in order -->
+            <ol>
+              <li>Keeper of the Lost Cities</li>
+              <li>Exile</li>
+              <li>Everblaze</li>
+              <li>Neverseen</li>
+              <li>Lodestar</li>
+              <li>Nightfall</li>
+              <li>Flashback</li>
+              <li>Legacy</li>
+              <li>Stellarlune</li>
+            </ol>
+          </div>
+          <!-- NEW ELEMENT: MAP -->
+          <!-- The map attribute is used to define an image map i.e. an image where different sections of that image are clickable and navigate to new areas (either external or internal links) 
+           -  shape="poly" denotes the nature of the image portion which should be mapped to the provided link
+           here, we specify poly, since each link-matched section of our image is not a clear shape like a rectangle or circle
+           - coords = "x1, y1, x2, y2, ..." denote the coordinates of the shape. These map to exact coordinates on the image (thus, image scaling is very important)
+           - href = ".." denotes the link to navigate to when the specific area of the image is clicked on
+           - alt = "..." denotes a text string to display if the image cannot be shown
+          -->
+          <!-- NEW ATTRIBUTE: coords -->
+          <!-- NEW ATTRIBUTE: shape -->
+          <figure>
+            <!-- I put the entire image map into the figure tag to show that map and img are together -->
+            <map name="kotlc-characters">
+              <!--image map to navigate to different sections of the page !-->
+              <area
+                shape="poly"
+                coords="166,206,75,198,33,113,80,41,163,7,234,19,169,38,130,88,130,159"
+                href="kotlc.html#sophie"
+                alt="Sophie Foster"
+              />
+              <area
+                shape="poly"
+                coords="130,121,180,44,264,44,309,97,320,185,272,259,267,187,230,127,167,114"
+                href="kotlc.html#keefe"
+                alt="Keefe Sencen"
+              />
+              <area
+                shape="poly"
+                coords="220,130,267,209,228,284,152,301,72,262,29,191,26,143,60,196,128,225,195,190"
+                href="kotlc.html#fitz"
+                alt="Fitz Vacker"
+              />
+            </map>
+            <!-- NEW ATTRIBUTE: usemap -->
+            <!-- usemap = "..." is used with the partial URL of the associated image map 
+            It allows you to associate the related parts of the provide image (src) to the different links in the image map.
+            -->
+            <img
+              usemap="#kotlc-characters"
+              src="images/kotlc/circle.png"
+              alt="KOTLC Main Characters"
+              width="350"
+              height="308"
+            />
+            <figcaption>Click a character to jump to their section.</figcaption>
+          </figure>
+        </div>
       </section>
+
+      <section class="trailer">
+        <h3>Book Trailer</h3>
+        <!-- NEW ATTRIBUTE: allow -->
+        <!-- allow = "..." lets one delineate the iframe's Permissions Policy.
+            For example, autoplay makes it so that the video is allowed to play automatically. 
+            picture-in-picture allows the video to 'pop out' and keep playing in a smaller view when the user is on different windows or tabs.
+            fullscreen allows the video to become full-screen if the user clicks on the associated button. 
+            -->
+        <iframe
+          width="580"
+          height="350"
+          src="https://www.youtube.com/embed/IvuFCtxs7lE"
+          title="Keeper of the Lost Cities Book Trailer"
+          frameborder="0"
+          allow="autoplay; picture-in-picture; fullscreen"
+        >
+        </iframe>
+      </section>
+
       <section class="genre" id="sophie">
-        <header>
-          <h3>Sophie Foster</h3>
-          <img
-            src="images/kotlc/sophie.webp"
-            alt="Sophie Foster"
-            width="200"
-            height="250"
-            class="flow-right"
-          />
-          <p>
-            Sophie is the main character of KOTLC. She was raised in the human
-            world and has brown eyes, unlike the other eleves, who all have blue
-            eyes. She also has numerous special abilities. She is the
-            <em>most powerful</em> elf in the Lost Cities, despite being only 16
-            years old.
-          </p>
-          <p>
-            Sophie's parents are largely unknown for the majority of the series.
-            When she goes to the Lost Cities, she is adopted by Grady and
-            Edaline Vacker, who had recently lost their own daughter in a fire.
-            However, it is revealed that Sophie's mother is none other than
-            Councillor Oralie (<strong
-              >Councillors are not allowed to have children in order to remain
-              impartial when ruling!</strong
-            >), who had worked in collabortion with the Black Swan to ensure her
-            birth. Sophie's father is still unknown by the end of book 9.
-          </p>
-        </header>
+        <h3>Sophie Foster</h3>
+        <img
+          src="images/kotlc/sophie.webp"
+          alt="Sophie Foster"
+          width="200"
+          height="250"
+          class="flow-right"
+        />
+        <p>
+          Sophie is the main character of KOTLC. She was raised in the human
+          world and has brown eyes, unlike the other eleves, who all have blue
+          eyes. She also has numerous special abilities. She is the
+          <em>most powerful</em> elf in the Lost Cities, despite being only 16
+          years old.
+        </p>
+        <p>
+          Sophie's parents are largely unknown for the majority of the series.
+          When she goes to the Lost Cities, she is adopted by Grady and Edaline
+          Vacker, who had recently lost their own daughter in a fire. However,
+          it is revealed that Sophie's mother is none other than Councillor
+          Oralie (<strong
+            >Councillors are not allowed to have children in order to remain
+            impartial when ruling!</strong
+          >), who had worked in collabortion with the Black Swan to ensure her
+          birth. Sophie's father is still unknown by the end of book 9.
+        </p>
         <section>
           <h4>Sophie's Special Abilities</h4>
+          <!-- NEW ELEMENT: SUMMARY -->
+          <!-- The details (parent) and summary (child) tags go hand-in-hand. Here, the summary tag toggles the details tag, allowing you to show and hide text with a click of a button. 
+            Text inside of the summary tag is displayed regardless. Text outside of the summary tag and inside of the details tag is shown on toggle open (i.e. when the summary tag is clicked) and hidden on toggle close (i.e. when the summary tag is clicked again, or on page load).
+            One is able to toggle open multiple details tags at once (since they are independent of each other by default)
+            -->
           <details>
             <summary>Telepathy</summary>
             The ability to read minds.
@@ -180,11 +236,11 @@
           date briefly, but break up when he insists on working to find out who
           her birth parents are. Like Sophie, he is a Telepath (and, like most
           eleves, he has only one special ability). He is the 'heir' to the
-          Vacker legacy (the Vackers are an extremely prestigious elven
-          family).
+          Vacker legacy (the Vackers are an extremely prestigious elven family).
         </p>
       </section>
     </main>
+
     <footer role="contentinfo">
       <p>
         For more detailed information,

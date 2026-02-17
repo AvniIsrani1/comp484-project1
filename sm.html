@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en">
+  <!-- contains metadata -->
   <head>
     <meta charset="utf-8" />
-    <title>Avni's Favorite Books</title>
+    <!-- title that shows up in browser -->
+    <title>Shatter Me | Romantasy Reccs</title>
+    <!-- css file for styling -->
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
     <header role="banner">
-      <h1>Amazing Books and Where to Find Them</h1>
+      <h1>Romantasy Reccs</h1>
       <h2>A Guide to Fantasy-Romance</h2>
       <p>
         My personal recommendations for
@@ -15,16 +19,20 @@
         reading!
       </p>
       <nav role="navigation">
-        <p>Other books:</p>
+        <!-- unordered list because you can navigate in any order you want -->
         <ul>
+          <!-- aria-current is used to indicate that this is the item that we are currently on -->
           <li><a href="kotlc.html">Keeper of the Lost Cities</a></li>
           <li><a href="tcp.html">The Cruel Prince</a></li>
-          <li hidden><a href="sm.html">Shatter Me</a></li>
+          <li><a href="sm.html" aria-current="page">Shatter Me</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- main content -->
     <main role="main">
       <section class="genre">
+        <!-- introductory material within the section -->
         <header>
           <h3>Shatter Me by Tahereh Mafi</h3>
           <p>
@@ -36,84 +44,99 @@
             Chief Commander of Sector 45, who wishes to use her abilities for
             the Reestablishment.
           </p>
-          <p>This is a 10-book, completed series (Shatter Me):</p>
-          <ol>
-            <li>Shatter Me</li>
-            <li>Destroy Me</li>
-            <li>Unravel Me</li>
-            <li>Fracture Me</li>
-            <li>Ignite Me</li>
-            <li>Defy Me</li>
-            <li>Imagine Me</li>
-            <li>Reveal Me</li>
-            <li>Shadow Me</li>
-            <li>Believe Me</li>
-          </ol>
         </header>
-        <section>
-          <h4>Book Trailer</h4>
-          <iframe
-            width="580"
-            height="350"
-            src="https://www.youtube.com/embed/Dm8A_DvKUNw"
-            title="Shatter Me Book Trailer"
-            frameborder="0"
-            allow="autoplay; picture-in-picture; fullscreen"
-          >
-          </iframe>
-        </section>
+        <p>This is a 10-book, completed series (Shatter Me):</p>
+        <!-- ordered list because you must read in order-->
+        <ol>
+          <li>Shatter Me</li>
+          <li>Destroy Me</li>
+          <li>Unravel Me</li>
+          <li>Fracture Me</li>
+          <li>Ignite Me</li>
+          <li>Defy Me</li>
+          <li>Imagine Me</li>
+          <li>Reveal Me</li>
+          <li>Shadow Me</li>
+          <li>Believe Me</li>
+        </ol>
       </section>
-      <section class="genre" id="julliete">
-        <h3>Juliette Ferrars</h3>
-        <img
-          src="images/sm/juliette.webp"
-          alt="Juliette Ferras"
-          width="200"
-          height="250"
-          class="flow-right"
-        />
-        <p>Power: Lethal Touch</p>
+
+      <section class="trailer">
+        <h3>Book Trailer</h3>
+        <iframe
+          width="580"
+          height="350"
+          src="https://www.youtube.com/embed/Dm8A_DvKUNw"
+          title="Shatter Me Book Trailer"
+          allow="autoplay; picture-in-picture; fullscreen"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section>
+        <h3>Important Characters</h3>
         <p>
-          Juliette grew up in an abusive, adoptive family. Initially, she is
-          unable to control her powers, making it so that she accidentally kills
-          several others. Later, she is able to gain control of her powers.
+          There are several main characters in <i>Shatter Me</i>. Some of the
+          most important ones include:
         </p>
+        <div class="characters">
+          <section class="genre" id="juliette">
+            <h4>Juliette Ferrars</h4>
+            <img
+              src="images/sm/juliette.webp"
+              alt="Juliette Ferrars"
+              width="200"
+              height="250"
+              class="flow-right"
+            />
+            <p>Power: Lethal Touch</p>
+            <p>
+              Juliette grew up in an abusive, adoptive family. Initially, she is
+              unable to control her powers, making it so that she accidentally
+              kills several others. Later, she is able to gain control of her
+              powers.
+            </p>
+          </section>
+
+          <section class="genre" id="adam">
+            <h4>Adam Kent Anderson</h4>
+            <img
+              src="images/sm/adam.webp"
+              alt="Adam Kent Anderson"
+              width="200"
+              height="250"
+              class="flow-left"
+            />
+            <p>Power: Neutralization of Others' Powers</p>
+            <p>
+              Adam starts out as the main male character and Juliette's love
+              interest. At the end of the book, he helps her escape from the
+              asylum. Due to his powers, he is the first person Juliette has met
+              who is able to withstand her touch.
+            </p>
+          </section>
+
+          <section class="genre" id="warner">
+            <h4>Aaron Warner Anderson</h4>
+            <img
+              src="images/sm/warner.webp"
+              alt="Aaron Warner Anderson"
+              width="200"
+              height="250"
+              class="flow-left"
+            />
+            <p>Power: Absorption and Amplification of Others' Powers</p>
+            <p>
+              Aaron initially seems like the villian of the story, forcing
+              Juliette to test out her powers by seemingly making her kill
+              countless others (really, it is just a simulation). Later, as
+              Juliette is about to escape from the asylum, we discover that
+              Aaron is also able to withstand her touch.
+            </p>
+          </section>
+        </div>
       </section>
-      <section class="genre" id="adam">
-        <h3>Adam Kent Anderson</h3>
-        <img
-          src="images/sm/adam.webp"
-          alt="Adam Kent Anderson"
-          width="200"
-          height="250"
-          class="flow-left"
-        />
-        <p>Power: Neutralization of Others' Powers</p>
-        <p>
-          Adam starts out as the main male character and Juliette's love
-          interest. At the end of the book, he helps her escape from the asylum.
-          Due to his powers, he is the first person Juliette has met who is able
-          to withstand her touch.
-        </p>
-      </section>
-      <section class="genre" id="warner">
-        <h3>Aaron Warner Anderson</h3>
-        <img
-          src="images/sm/adam.webp"
-          alt="Aaron Warner Anderson"
-          width="200"
-          height="250"
-          class="flow-left"
-        />
-        <p>Power: Absorption and Amplification of Others' Powers</p>
-        <p>
-          Aaron initially seems like the villian of the story, forcing Juliette
-          to test out her powers by seemingly making her kill countless others
-          (really, it is just a simulation). Later, as Juliette is about to
-          escape from the asylum, we discover that Aaron is also able to
-          withstand her touch.
-        </p>
-      </section>
+
       <section class="genre" id="quotes">
         <h3>Quotes</h3>
         <p>
@@ -128,14 +151,38 @@
           </summary>
           Juliette Ferrars
         </details>
-        <hr>
-        <aside>
-          A very unique feature of this book is it's use of strikethrough's to
-          showcase thoughts that Juliette is too scared to voice or admit to
-          herself. These are thoughts that she tries to censor herself of.<br><br>
-          <cite><s>"In seventeen years no one has said my name like that."</s></cite>
-          <br><br>
-          <cite><s>"I am not insane."</s></cite>
+        <details>
+          <summary>
+            "It sounds crazy, to think that I cared so much without ever talking
+            to you."
+          </summary>
+          Adam Kent
+        </details>
+        <details>
+          <summary>"Because I’m in love with you."</summary>
+          Adam Kent
+        </details>
+        <aside role="complementary">
+          <h4>Unique Formatting</h4>
+          <p>
+            A very unique feature of this book is it's use of strikethroughs to
+            showcase thoughts that Juliette is too scared to voice or admit to
+            herself. These are thoughts that she tries to censor.
+          </p>
+          <!-- NEW ELEMENT: s -->
+          <!-- The s tag gives the appearance of a text (inline) strikethrough. It is used to show text that is now irrelevant or inaccurate. 
+           Here, we use the s tag to show special quotes from the novel in question. Here, while the text is stricken in the original novel itself, 
+           it still represents text that is no longer relevant/accurate because it is self-censored i.e. immediately dismissed by the narrator. 
+          -->
+          <q><s>I am not insane.</s></q>
+          <q><s>In seventeen years no one has said my name like that.</s></q>
+          <q><s>I am a monster.</s></q>
+          <q
+            ><s
+              >I remember you every day forever in every single broken moment of
+              my life.</s
+            ></q
+          >
         </aside>
       </section>
     </main>
