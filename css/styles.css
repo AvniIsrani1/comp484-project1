@@ -74,10 +74,16 @@ aside q {
   flex: 1; 
 }
 
-.trailer{
+.main-media{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.main-media div {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .info {
@@ -101,4 +107,26 @@ aside q {
 .flow-right {
     float: right;
     margin-left: 10px;
+}
+.short-series {
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+
+.secondary {
+    display: flex;
+    gap: 15px;
+}
+.secondary > * {
+    flex: 1
+}
+
+
+details {
+    padding: 10px;
+}
+
+.answer {
+    text-indent: 60px;
 }
