@@ -12,16 +12,23 @@
   <body>
     <header role="banner">
       <h1>Romantasy Reccs</h1>
-      <h2>A Guide to Fantasy-Romance</h2>
+      <p class="tagline">A Guide to Fantasy-Romance</p>
       <p>
-        My personal recommendations for
+        My recommendations for
         <strong>incredible</strong> fantasy-romance novels and series. Happy
         reading!
       </p>
+      <img
+        src="images/book.png"
+        alt="Open Book"
+        height="400"
+        class="main-book"
+      />
       <nav role="navigation">
         <ul>
           <!-- unordered list because you can navigate in any order you want -->
           <!-- aria-current is used to indicate that this is the item that we are currently on -->
+          <li><a href="index.html">Home</a></li>
           <li><a href="kotlc.html">Keeper of the Lost Cities</a></li>
           <li><a href="tcp.html" aria-current="page">The Cruel Prince</a></li>
           <li><a href="sm.html">Shatter Me</a></li>
@@ -31,10 +38,10 @@
 
     <!-- main content -->
     <main role="main">
-      <section class="genre">
+      <section class="card">
         <!-- introducing the book (introductory content) -->
         <header>
-          <h3>The Cruel Prince by Holly Black</h3>
+          <h2>The Cruel Prince by Holly Black</h2>
           <p>
             The Cruel Prince stars Jude Duarte, a human raised in the fey world
             alongside her twin sister. Prince Cardan is the the cruelest son of
@@ -94,7 +101,7 @@
           There are really only two main leads in this novel/series. The book is
           told primarily in <a href="tcp.html#jude">Jude's</a> perspective.
         </p>
-        <section class="genre" id="jude">
+        <section class="card" id="jude">
           <h4>Jude Duarte</h4>
           <img
             src="images/tcp/jude.jpg"
@@ -114,7 +121,7 @@
             human nature.
           </p>
         </section>
-        <section class="genre" id="cardan">
+        <section class="card" id="cardan">
           <h4>Cardan Greenbriar</h4>
           <img
             src="images/tcp/cardan.webp"
@@ -142,7 +149,7 @@
           If you've already read the series, take the time to test your
           knowledge. Who spoke the below lines?
         </p>
-        <div class="genre">
+        <div class="card">
           <details>
             <summary>
               "If I cannot be better than them, I will become so much worse."

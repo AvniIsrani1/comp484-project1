@@ -1,9 +1,31 @@
 html {
     margin:0 auto;
     padding:0;
-    width:90%;
+    width:80%;
+    font-size:16px;
     font-family: 'Lucida Sans', sans-serif;
     background-color: rgb(250, 245, 255);
+}
+
+h1 {
+    font-size:44px;
+    margin:0;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28;
+} 
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
 }
 
 footer {
@@ -14,15 +36,28 @@ footer {
     text-align: center;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 header h1 {
-    border:2px solid black;
+    width: 100%;
+    border-bottom:2px solid black;
     padding:10px;
     text-align: center;
-    background-color: #170068;
-    color:white;
+    color:rgb(0, 0, 0);
 }
+
 header h2 {
-    text-decoration: underline;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
 }
 nav ul {
     padding: 0;
@@ -30,14 +65,23 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    /* gap: 20px; */
 }
 nav ul li {
+    flex:1;
+    text-align: center;
     border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
+    /* border-radius: 5px; */
+    padding: 15px;
     background-color: #f0fcff;
     box-shadow: 0px 5px 5px 2px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration:underline;
 }
 
 img {
@@ -52,17 +96,24 @@ aside q {
 }
 
 
-.genre {
+.card {
     display:flex;
     flex-direction: column;
     border: 1px solid;
     padding:15px;
-    margin: 20px 0px;
-    font-size:20px;
+    margin-top: 40px;
     background-color:#f0fcff;
 }
 
-.genre h4, .genre img {
+nav li:has(a[aria-current="page"]) {
+    background-color: #32004f;
+}
+
+nav li:has(a[aria-current="page"]) a {
+    color: white;
+}
+
+.card h4, .card img {
     align-self: center;
 }
 
@@ -97,9 +148,27 @@ aside q {
     gap: 5px;
 }
 
-.center-images img {
-    width: 33%;
+.center-images figure {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0;
+    margin: 0;
 }
+.center-images figure img {
+    width: 100%;
+    border-radius: 0px;
+    border-style: none;
+}
+.center-images figure figcaption{ 
+    background-color:#32004f;
+    color: white;
+    font: italic smaller sans-serif;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
 .flow-left {
     float: left;
     margin-right: 10px;
@@ -115,13 +184,10 @@ aside q {
 }
 
 .secondary {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
-.secondary > * {
-    flex: 1
-}
-
 
 details {
     padding: 10px;
@@ -129,4 +195,51 @@ details {
 
 .answer {
     text-indent: 60px;
+}
+
+.main-book {
+    border: none;
+    align-self: center;
+}
+
+.large-quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #32004f;
+    margin: 20px 0px 20px 0px;
+}
+.single-quote p {
+    text-align: center;
+    color: white;
+}
+table {
+    padding: 20px;
+    border:solid 2px #32004f
+}
+table td, table th {
+    padding: 10px;
+    border: 1px solid #32004f; 
+}
+.center {
+    display:flex;
+    justify-content: center;
+	text-align: center;
+}
+
+.sophie-card{
+    padding: 0;  
+    overflow: hidden; 
+}
+
+.sophie-text{
+    flex: 1;
+    padding: 15px;
+}
+.sophie-pic{
+    flex: 1;
+    background-image: url("/images/kotlc/sophie.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

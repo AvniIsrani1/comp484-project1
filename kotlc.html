@@ -13,16 +13,23 @@
   <body>
     <header role="banner">
       <h1>Romantasy Reccs</h1>
-      <h2>A Guide to Fantasy-Romance</h2>
+      <p class="tagline">A Guide to Fantasy-Romance</p>
       <p>
-        My personal recommendations for
+        My recommendations for
         <strong>incredible</strong> fantasy-romance novels and series. Happy
         reading!
       </p>
+      <img
+        src="images/book.png"
+        alt="Open Book"
+        height="400"
+        class="main-book"
+      />
       <nav role="navigation">
         <ul>
           <!-- unordered list because you can navigate in any order you want -->
           <!-- aria-current is used to indicate that this is the item that we are currently on -->
+          <li><a href="index.html">Home</a></li>
           <li>
             <a href="kotlc.html" aria-current="page"
               >Keeper of the Lost Cities</a
@@ -36,9 +43,9 @@
 
     <!-- main content -->
     <main role="main">
-      <section class="genre">
+      <section class="card">
         <header>
-          <h3>Keeper of the Lost Cities by Shannon Messenger</h3>
+          <h2>Keeper of the Lost Cities by Shannon Messenger</h2>
           <p>
             KOTLC follows Sophie Foster, an elf raised in the human world who
             returns to the Lost Cities and joins her people. She is the result
@@ -124,6 +131,20 @@
         </div>
       </section>
 
+      <section class="large-quote">
+        <div class="single-quote">
+          <blockquote
+            cite="https://fun-fandom-kotlc.fandom.com/wiki/KotLC_Quotes"
+          >
+            <p>
+              He's not all bad, no one is. That's what makes villians so scary
+              they aren't as different from us as we want them to be.
+            </p>
+          </blockquote>
+          <p>—Sophie Foster, <cite>Keeper of the Lost Cities</cite></p>
+        </div>
+      </section>
+
       <section class="main-media">
         <h3>Media</h3>
         <!-- NEW ATTRIBUTE: allow -->
@@ -151,104 +172,112 @@
         </div>
       </section>
 
+      <section class="large-quote">
+        <div class="single-quote">
+          <blockquote
+            cite="https://fun-fandom-kotlc.fandom.com/wiki/KotLC_Quotes"
+          >
+            <p>All it takes is one to stand where others fall.</p>
+          </blockquote>
+          <p>—Calla (Gnome), <cite>Keeper of the Lost Cities</cite></p>
+        </div>
+      </section>
+
       <section>
         <h3>Main Characters in <i>The Keeper of the Lost Cities</i></h3>
         <p>
           <a href="kotlc.html#sophie">Sophie</a> is the main character, but
           there are several supporting characters..
         </p>
-        <section class="genre" id="sophie">
-          <h4>Sophie Foster</h4>
-          <img
-            src="images/kotlc/sophie.webp"
-            alt="Sophie Foster"
-            width="200"
-            height="250"
-            class="flow-right"
-          />
-          <p>
-            Sophie is the main character of KOTLC. She was raised in the human
-            world and has brown eyes, unlike the other eleves, who all have blue
-            eyes. She also has numerous special abilities. She is the
-            <em>most powerful</em> elf in the Lost Cities, despite being only 16
-            years old.
-          </p>
-          <p>
-            Sophie's parents are largely unknown for the majority of the series.
-            When she goes to the Lost Cities, she is adopted by Grady and
-            Edaline Vacker, who had recently lost their own daughter in a fire.
-            However, it is revealed that Sophie's mother is none other than
-            Councillor Oralie (<strong
-              >Councillors are not allowed to have children in order to remain
-              impartial when ruling!</strong
-            >), who had worked in collabortion with the Black Swan to ensure her
-            birth. Sophie's father is still unknown by the end of book 9.
-          </p>
-          <section>
-            <h5>Sophie's Special Abilities</h5>
-            <div class="ability-images">
-              <img
-                src="images/kotlc/telepath.png"
-                alt="Telepathy Badge"
-                width="100"
-                height="100"
-              />
-              <img
-                src="images/kotlc/inflictor.png"
-                alt="Inflicting Badge"
-                width="100"
-                height="100"
-              />
-              <img
-                src="images/kotlc/polyglot.png"
-                alt="Polyglot Badge"
-                width="100"
-                height="100"
-              />
-              <img
-                src="images/kotlc/teleportation.png"
-                alt="Teleporation Badge"
-                width="100"
-                height="100"
-              />
-              <img
-                src="images/kotlc/enhance.png"
-                alt="Enhancing Badge"
-                width="100"
-                height="100"
-              />
-            </div>
-            <!-- NEW ELEMENT: SUMMARY -->
-            <!-- The details (parent) and summary (child) tags go hand-in-hand. Here, the summary tag toggles the details tag, allowing you to show and hide text with a click of a button. 
+        <section class="card sophie-card" id="sophie">
+          <div class="flow-left sophie-text">
+            <h4>Sophie Foster</h4>
+            <p>
+              Sophie is the main character of KOTLC. She was raised in the human
+              world and has brown eyes, unlike the other eleves, who all have
+              blue eyes. She also has numerous special abilities. She is the
+              <em>most powerful</em> elf in the Lost Cities, despite being only
+              16 years old.
+            </p>
+            <p>
+              Sophie's parents are largely unknown for the majority of the
+              series. When she goes to the Lost Cities, she is adopted by Grady
+              and Edaline Vacker, who had recently lost their own daughter in a
+              fire. However, it is revealed that Sophie's mother is none other
+              than Councillor Oralie (<strong
+                >Councillors are not allowed to have children in order to remain
+                impartial when ruling!</strong
+              >), who had worked in collabortion with the Black Swan to ensure
+              her birth. Sophie's father is still unknown by the end of book 9.
+            </p>
+            <section>
+              <h5>Sophie's Special Abilities</h5>
+              <div class="ability-images">
+                <img
+                  src="images/kotlc/telepath.png"
+                  alt="Telepathy Badge"
+                  width="100"
+                  height="100"
+                />
+                <img
+                  src="images/kotlc/inflictor.png"
+                  alt="Inflicting Badge"
+                  width="100"
+                  height="100"
+                />
+                <img
+                  src="images/kotlc/polyglot.png"
+                  alt="Polyglot Badge"
+                  width="100"
+                  height="100"
+                />
+                <img
+                  src="images/kotlc/teleportation.png"
+                  alt="Teleporation Badge"
+                  width="100"
+                  height="100"
+                />
+                <img
+                  src="images/kotlc/enhance.png"
+                  alt="Enhancing Badge"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <!-- NEW ELEMENT: SUMMARY -->
+              <!-- The details (parent) and summary (child) tags go hand-in-hand. Here, the summary tag toggles the details tag, allowing you to show and hide text with a click of a button. 
             Text inside of the summary tag is displayed regardless. Text outside of the summary tag and inside of the details tag is shown on toggle open (i.e. when the summary tag is clicked) and hidden on toggle close (i.e. when the summary tag is clicked again, or on page load).
             One is able to toggle open multiple details tags at once (since they are independent of each other by default)
             -->
-            <details>
-              <summary>Telepathy</summary>
-              The ability to read minds.
-            </details>
-            <details>
-              <summary>Inflicting</summary>
-              The ability to project emotions (negative and positive) onto
-              others.
-            </details>
-            <details>
-              <summary>Teleportation</summary>
-              The ability to transport to different locations.
-            </details>
-            <details>
-              <summary>Enhancing</summary>
-              The ability to increase the strength of other people's special
-              abilities.
-            </details>
-            <details>
-              <summary>Polyglot</summary>
-              The ability to understand and speak all languages.
-            </details>
-          </section>
+              <details>
+                <summary>Telepathy</summary>
+                The ability to read minds.
+              </details>
+              <details>
+                <summary>Inflicting</summary>
+                The ability to project emotions (negative and positive) onto
+                others.
+              </details>
+              <details>
+                <summary>Teleportation</summary>
+                The ability to transport to different locations.
+              </details>
+              <details>
+                <summary>Enhancing</summary>
+                The ability to increase the strength of other people's special
+                abilities.
+              </details>
+              <details>
+                <summary>Polyglot</summary>
+                The ability to understand and speak all languages.
+              </details>
+            </section>
+          </div>
+          <div class="sophie-pic">
+          </div>
         </section>
         <div class="secondary">
-          <section class="genre" id="keefe">
+          <section class="card" id="keefe">
             <h4>Keefe Sencen</h4>
             <img
               src="images/kotlc/keefe.webp"
@@ -282,14 +311,46 @@
               />
             </div>
           </section>
-          <section class="genre" id="fitz">
+          <section class="card" id="dex">
+            <h4>Dex Diznee</h4>
+            <img
+              src="images/kotlc/dex.png"
+              alt="Dex Diznee"
+              width="200"
+              height="250"
+              class="flow-right"
+            />
+            <p>
+              Dex is Sophie's best friend. He is a Technopath, which means he
+              has the ability to 'speak' to technology and other gadgets. He
+              comes from a large family and has 3 other siblings (triplets). In
+              the Lost Cities, multiple births are considered less 'pure' than
+              single births (i.e. the idea that each successive child will have
+              less abilities than the other). Dex's father is also Talentless
+              (he did not manifest any special ability), which is very taboo in
+              this world. As such, Dex experiences a lot of prejudice and
+              bullying. When Sophie and Dex first meet, she defends him from
+              Stina Hex, which marks the start of their friendship. He initially
+              has a crush on Sophie; after they kiss, however, they realize that
+              their feelings are more friendship than love.
+            </p>
+            <div class="ability-images">
+              <img
+                src="images/kotlc/technopath.png"
+                alt="Technopath Badge"
+                width="100"
+                height="100"
+              />
+            </div>
+          </section>
+          <section class="card" id="fitz">
             <h4>Fitz Vacker</h4>
             <img
               src="images/kotlc/fitz.webp"
               alt="Fitz Vacker"
               width="200"
               height="250"
-              class="flow-right"
+              class="flow-left"
             />
             <p>
               Fitz is the other main male character in KOTC. In most of the
@@ -312,6 +373,44 @@
               />
             </div>
           </section>
+          <section class="card" id="biana">
+            <h4>Biana Vacker</h4>
+            <img
+              src="images/kotlc/biana.png"
+              alt="Biana Vacker"
+              width="200"
+              height="250"
+              class="flow-right"
+            />
+            <p>
+              Biana is Keefe's younger sister. She is a Vanisher, meaning she
+              can manipulate light to make herself (and others) invisible. This
+              is a very useful skill for some of the overt missions that Sophie
+              and the team undergo to try to bring peace and reformation to the
+              Lost Cities.
+            </p>
+            <div class="ability-images">
+              <img
+                src="images/kotlc/vanisher.png"
+                alt="Vanisher Badge"
+                width="100"
+                height="100"
+              />
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="large-quote">
+        <div class="single-quote">
+          <blockquote
+            cite="https://fun-fandom-kotlc.fandom.com/wiki/KotLC_Quotes"
+          >
+            <p>
+              I'd rather be punished for making the right decision than live
+              with the guilt of making the wrong one for the rest of my life.
+            </p>
+          </blockquote>
+          <p>—Sophie Foster, <cite>Keeper of the Lost Cities</cite></p>
         </div>
       </section>
     </main>

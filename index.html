@@ -12,15 +12,23 @@
   <body>
     <header role="banner">
       <h1>Romantasy Reccs</h1>
-      <h2>A Guide to Fantasy-Romance</h2>
+      <p class="tagline">A Guide to Fantasy-Romance</p>
       <p>
-        My personal recommendations for
+        My recommendations for
         <strong>incredible</strong> fantasy-romance novels and series. Happy
         reading!
       </p>
+      <img
+        src="images/book.png"
+        alt="Open Book"
+        height="400"
+        class="main-book"
+      />
       <nav role="navigation">
         <!-- unordered list because you can navigate in any order you want -->
         <ul>
+          <!-- aria-current is used to indicate that this is the item that we are currently on -->
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="kotlc.html">Keeper of the Lost Cities</a></li>
           <li><a href="tcp.html">The Cruel Prince</a></li>
           <li><a href="sm.html">Shatter Me</a></li>
@@ -30,18 +38,44 @@
 
     <!-- main content -->
     <main role="main">
-      <section class="genre">
+      <header>
+        <h2>Genres and Tropes I Love</h2>
+        <p>
+          In this section, I describe some of the major tropes within the
+          fantasy and romance genres. Please keep in mind that the books in this
+          website may display one or multiple of these themes. Romantasy blends
+          romance and fantasy, allowing you to not only experience different
+          worlds but different relationships.
+        </p>
+      </header>
+      <section class="card">
         <!-- introductory material within the section -->
         <header>
           <h3>Fantasy</h3>
           <div class="center-images">
-            <img src="images/genres/fantasy.png" alt="Fantasy" height="300" />
-            <img src="images/genres/kingdom.jpg" alt="Kingdom" height="300" />
+            <figure>
+              <img src="images/genres/fantasy.png" alt="Fantasy" height="300" />
+              <figcaption>Magical Worlds</figcaption>
+            </figure>
+            <figure>
+              <img src="images/genres/kingdom.jpg" alt="Kingdom" height="300" />
+              <figcaption>Enchanted Realms</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="images/genres/darkfantasy.webp"
+                alt="Dark Fantasy"
+                height="300"
+              />
+              <figcaption>Epic Quests</figcaption>
+            </figure>
+            <!-- <img src="images/genres/fantasy.png" alt="Fantasy" height="300" /> -->
+            <!-- <img src="images/genres/kingdom.jpg" alt="Kingdom" height="300" />
             <img
               src="images/genres/darkfantasy.webp"
               alt="Dark Fantasy"
               height="300"
-            />
+            />-->
           </div>
           <p>
             Fantasy is one of my favorite genres. All of the books on this
@@ -71,7 +105,7 @@
         </section>
       </section>
 
-      <section class="genre">
+      <section class="card">
         <header>
           <!-- introductory material within the section -->
           <h3>Romance</h3>

@@ -12,16 +12,23 @@
   <body>
     <header role="banner">
       <h1>Romantasy Reccs</h1>
-      <h2>A Guide to Fantasy-Romance</h2>
+      <p class="tagline">A Guide to Fantasy-Romance</p>
       <p>
-        My personal recommendations for
+        My recommendations for
         <strong>incredible</strong> fantasy-romance novels and series. Happy
         reading!
       </p>
+      <img
+        src="images/book.png"
+        alt="Open Book"
+        height="400"
+        class="main-book"
+      />
       <nav role="navigation">
         <!-- unordered list because you can navigate in any order you want -->
         <ul>
           <!-- aria-current is used to indicate that this is the item that we are currently on -->
+          <li><a href="index.html">Home</a></li>
           <li><a href="kotlc.html">Keeper of the Lost Cities</a></li>
           <li><a href="tcp.html">The Cruel Prince</a></li>
           <li><a href="sm.html" aria-current="page">Shatter Me</a></li>
@@ -31,10 +38,10 @@
 
     <!-- main content -->
     <main role="main">
-      <section class="genre">
+      <section class="card">
         <!-- introductory material within the section -->
         <header>
-          <h3>Shatter Me by Tahereh Mafi</h3>
+          <h2>Shatter Me by Tahereh Mafi</h2>
           <p>
             Shatter Me features Juliette Ferrars, a 17-year-old girl whose touch
             is lethal. The story begins with her in an asylum, where she has
@@ -46,20 +53,38 @@
           </p>
         </header>
         <p><b>Dystopian / Enemies-to-Lovers</b></p>
-        <p>This is a 10-book, completed series (Shatter Me):</p>
-        <!-- ordered list because you must read in order-->
-        <ol>
-          <li>Shatter Me</li>
-          <li>Destroy Me</li>
-          <li>Unravel Me</li>
-          <li>Fracture Me</li>
-          <li>Ignite Me</li>
-          <li>Defy Me</li>
-          <li>Imagine Me</li>
-          <li>Reveal Me</li>
-          <li>Shadow Me</li>
-          <li>Believe Me</li>
-        </ol>
+        <div class="info">
+          <div class="book-list">
+            <p>This is a 10-book, completed series (Shatter Me):</p>
+            <!-- ordered list because you must read in order-->
+            <ol>
+              <li>Shatter Me</li>
+              <li>Destroy Me</li>
+              <li>Unravel Me</li>
+              <li>Fracture Me</li>
+              <li>Ignite Me</li>
+              <li>Defy Me</li>
+              <li>Imagine Me</li>
+              <li>Reveal Me</li>
+              <li>Shadow Me</li>
+              <li>Believe Me</li>
+            </ol>
+          </div>
+          <div>
+            <img
+              src="images/sm/book1shatter.webp"
+              alt="Shatter Me Book Cover"
+              width="350"
+              height="400"
+            />
+            <img
+              src="images/sm/shatter_me_book.webp"
+              alt="Shatter Me Alternate Book Cover"
+              width="350"
+              height="400"
+            />
+          </div>
+        </div>
       </section>
 
       <section class="main-media">
@@ -81,7 +106,7 @@
           most important ones include:
         </p>
         <div class="characters">
-          <section class="genre" id="juliette">
+          <section class="card" id="juliette">
             <h4>Juliette Ferrars</h4>
             <img
               src="images/sm/juliette.webp"
@@ -99,7 +124,7 @@
             </p>
           </section>
 
-          <section class="genre" id="adam">
+          <section class="card" id="adam">
             <h4>Adam Kent Anderson</h4>
             <img
               src="images/sm/adam.webp"
@@ -117,7 +142,7 @@
             </p>
           </section>
 
-          <section class="genre" id="warner">
+          <section class="card" id="warner">
             <h4>Aaron Warner Anderson</h4>
             <img
               src="images/sm/warner.webp"
@@ -137,7 +162,51 @@
           </section>
         </div>
       </section>
-
+      <section class="center">
+        <table
+          id="named"
+          border="1"
+          cellspacing="0"
+          cellpadding="0"
+          summary="A quick guide to important vocabulary in this series, including the term and its associated defintion."
+        >
+          <caption>
+            <h3>Important Vocabulary</h3>
+          </caption>
+          <tr>
+            <th scope="col">Term</th>
+            <th scope="col">Definition</th>
+          </tr>
+          <tr>
+            <td class="center">The Reestablishment</td>
+            <td>The ruling government/control system</td>
+          </tr>
+          <tr>
+            <td class="center">Commanders</td>
+            <td>High-ranking leaders in the Reestablishment</td>
+          </tr>
+          <tr>
+            <td class="center">The Restorative</td>
+            <td>The prison/asylum-like holding place</td>
+          </tr>
+          <tr>
+            <td class="center">Sector 45</td>
+            <td>The area/district the story centers around</td>
+          </tr>
+          <tr>
+            <td class="center">The Base</td>
+            <td>Where characters are kept/managed</td>
+          </tr>
+          <tr>
+            <td class="center">Point Omega</td>
+            <td>The resistance group / safe place</td>
+          </tr>
+          <tr>
+            <td class="center">Propaganda</td>
+            <td>Messaging used to control people</td>
+          </tr>
+        </table>
+      </section>
       <section id="quotes">
         <h3>Quotes</h3>
         <p>
@@ -145,7 +214,7 @@
           If you've already read the series, take the time to test your
           knowledge! Who spoke the below lines?
         </p>
-        <div class="genre">
+        <div class="card">
           <details>
             <summary>
               "All I ever wanted was to reach out and touch another human being
