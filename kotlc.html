@@ -62,8 +62,8 @@
             <p>
               <!-- NEW ELEMENT: s -->
               <!-- The s tag gives the appearance of a text (inline) strikethrough. It is used to show text that is now irrelevant or inaccurate. 
-             Here, we use the s tag to cross out the &apos;one.&apos; This helps to indicate that there has been a new release in the series, and that there 
-             is now one more book to be included. 
+             Here, we use the s tag to cross out the 'one.'' This helps to indicate that there has been a new release in the series, and that there 
+             is now one more book to be included (aka this information is no longer relevant).
           -->
               This is an <b>ongoing</b> series. So far, 9 books have been
               released, along with two 0.5 books and <s>one</s> two graphic
@@ -82,7 +82,7 @@
               <li>Stellarlune</li>
             </ol>
           </div>
-          <!-- NEW ELEMENT: MAP -->
+          <!-- NEW ELEMENT: MAP (used to navigate to different parts of this page in a more visual manner) -->
           <!-- The map attribute is used to define an image map i.e. an image where different sections of that image are clickable and navigate to new areas (either external or internal links) 
            -  shape="poly" denotes the nature of the image portion which should be mapped to the provided link
            here, we specify poly, since each link-matched section of our image is not a clear shape like a rectangle or circle
@@ -90,8 +90,8 @@
            - href = ".." denotes the link to navigate to when the specific area of the image is clicked on
            - alt = "..." denotes a text string to display if the image cannot be shown
           -->
-          <!-- NEW ATTRIBUTE: coords -->
-          <!-- NEW ATTRIBUTE: shape -->
+          <!-- NEW ATTRIBUTE: coords (specifies the coordinates of the shape which maps the image section to the associated link)-->
+          <!-- NEW ATTRIBUTE: shape (the type of shape that should be drawn on top of the image (not shown visibly) to map that shape area to the provided link (we use poly here for more flexibility because our image has irregular shape areas) -->
           <figure>
             <!-- I put the entire image map into the figure tag to show that map and img are together -->
             <map name="kotlc-characters">
@@ -251,6 +251,7 @@
               <!-- The details (parent) and summary (child) tags go hand-in-hand. Here, the summary tag toggles the details tag, allowing you to show and hide text with a click of a button. 
             Text inside of the summary tag is displayed regardless. Text outside of the summary tag and inside of the details tag is shown on toggle open (i.e. when the summary tag is clicked) and hidden on toggle close (i.e. when the summary tag is clicked again, or on page load).
             One is able to toggle open multiple details tags at once (since they are independent of each other by default)
+            Here, we use the summary tag to show the label and the detail tag to show the definition associated to that label.
             -->
               <details>
                 <summary>Telepathy</summary>
